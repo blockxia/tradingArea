@@ -1,0 +1,141 @@
+@import '../../../../stylesheet/common';
+.destination-page{
+  overflow: hidden;
+  .ant-form{
+    display: flex;
+    flex-direction: row;
+  }
+  .ant-row.ant-form-item{
+    display: flex;
+    flex-direction: row;
+  }
+  .productType-head{
+    box-sizing: border-box;
+    margin: 15px 15px;
+    height: 41px;
+    width: 100%;
+    //background: #ebebeb;
+    .form-wrap{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items:center;
+      &>.formitem{
+       /* flex: 1;
+        align-self: center;*/
+        margin-right: 20px;
+      }
+    }
+
+  }
+  .add{
+    font-size: 14px;
+    cursor: pointer;
+    color:$defaultColor;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .first{
+    margin-right: 15px;
+  }
+  .add-area{
+    font-size: 14px;
+    width: 50px;
+    //margin-bottom:15px;
+    margin-left:15px;
+    margin-right: 20px;
+    cursor: pointer;
+    color:$defaultColor;
+    line-height:32px;
+  }
+  .add2{
+    font-size: 14px;
+    width: 80px;
+    margin-bottom:15px; 
+    margin-left:15px; 
+    cursor: pointer;
+    background:$defaultColor;
+    color:#fff;
+    text-align: center;
+    border-radius: 4px;
+  }
+}
+.add-destType-modal{
+  width: 550px !important;
+}
+.add-dest-modal{
+ width: 700px !important;
+  .ant-modal-body{
+    height: 500px !important;
+    overflow: auto;
+  }
+ .imgBanner{
+    .ant-form-item-children{
+      padding-top:15px; 
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      ul{
+        margin-left:20px; 
+        margin-top: -10px;
+        li{
+          height: 25px;
+        }
+        }
+      }
+    }
+}
+
+
+.invoice-update-body{
+  .row{
+
+    //.row{
+    //  .row-title{
+    //    &.radio{
+    //      width: 40px;
+    //    }
+    //  }
+    //}
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    .row-title{
+      line-height: 40px;
+      //margin-left: 30px;
+      .rowRight{
+        margin-left: 10px;
+        text-align: center;
+      }
+      &.required{
+        &:before{
+          content: '*';
+          margin-right: 10px;
+          color: red;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    .row-box{
+      display: inline-block;
+      margin:10px ;
+
+    }
+    span {
+      margin-left: 10px;
+      //min-width: 100px;
+      text-align: right;
+    }
+    .ant-row{
+      margin-bottom: 0;
+      width: 200px;
+    }
+  }
+}
+
+.ant-form-item-control {
+  line-height: 40px;
+  width: 290px;
+}
